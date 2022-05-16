@@ -34,6 +34,7 @@ jobs:
       - name: build formatterlib
         shell: bash 
         run: |
+         cd formatter_lib
          cmake -S formatter_lib -B formatter_lib/build
          cmake --build formatter_lib/build --target formatter
         
